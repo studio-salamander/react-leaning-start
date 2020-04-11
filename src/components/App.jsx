@@ -12,37 +12,41 @@ class App extends React.Component {
 
     this.state = {
       movies: moviesData,
-      moviesWillWatch: []
+      moviesWillWatch: [],
     };
   }
 
-  deleteMovie = movie => {
+  deleteMovie = (movie) => {
     console.log(movie.id);
-    const updateMovies = this.state.movies.filter(item => item.id !== movie.id);
+    const updateMovies = this.state.movies.filter(
+      (item) => item.id !== movie.id
+    );
     console.log(updateMovies);
 
     // this.state.movies = updateMovies;
     this.setState({
-      movies: updateMovies
+      movies: updateMovies,
     });
+
+    this.deleteMovieFromWillWatch(movie);
   };
 
-  addMovieToWillWatch = movie => {
+  addMovieToWillWatch = (movie) => {
     const updateMoviesWillWatch = [...this.state.moviesWillWatch];
     updateMoviesWillWatch.push(movie);
 
     this.setState({
-      moviesWillWatch: updateMoviesWillWatch
+      moviesWillWatch: updateMoviesWillWatch,
     });
   };
 
-  deleteMovieFromWillWatch = movie => {
+  deleteMovieFromWillWatch = (movie) => {
     const updateMoviesWillWatch = this.state.moviesWillWatch.filter(
-      item => item.id !== movie.id
+      (item) => item.id !== movie.id
     );
 
     this.setState({
-      moviesWillWatch: updateMoviesWillWatch
+      moviesWillWatch: updateMoviesWillWatch,
     });
   };
 
@@ -53,7 +57,7 @@ class App extends React.Component {
         <div className="row mt-4">
           <div className="col-9">
             <div className="row">
-              {this.state.movies.map(movie => {
+              {this.state.movies.map((movie) => {
                 return (
                   <div className="col-6 mb-4" key={movie.id}>
                     <MovieItem
@@ -70,7 +74,7 @@ class App extends React.Component {
           <div className="col-3">
             <h4>Will Watch: {this.state.moviesWillWatch.length} movies</h4>
             <ul className="list-group">
-              {this.state.moviesWillWatch.map(movie => (
+              {this.state.moviesWillWatch.map((movie) => (
                 <li key={movie.id} className="list-group-item">
                   <div className="d-flex justify-content-between">
                     <p>{movie.title}</p>
