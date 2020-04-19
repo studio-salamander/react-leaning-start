@@ -1,9 +1,14 @@
 import React from "react";
+import classnames from "classnames";
 
 class MovieItem extends React.Component {
   state = {
     willWatch: false,
   };
+
+  // componentWillUnmount() {
+  //   console.log("unmount", this.props.data.title)
+  // }
 
   render() {
     const {
@@ -28,10 +33,11 @@ class MovieItem extends React.Component {
             <p className="mb-0">Rating: {data.vote_average}</p>
             <button
               type="button"
-              className={[
-                "btn",
-                this.state.willWatch ? "btn-success" : "btn-secondary",
-              ].join(" ")}
+              className={classnames({
+                btn: true,
+                "btn-success": this.state.willWatch,
+                "btn-secondary": !this.state.willWatch,
+              })}
               onClick={() => {
                 this.setState({
                   willWatch: this.state.willWatch ? false : true,
