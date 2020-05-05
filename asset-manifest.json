@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-leaning-start/static/css/main.5d937b94.chunk.css",
+    "main.js": "/react-leaning-start/static/js/main.395b0f40.chunk.js",
+    "main.js.map": "/react-leaning-start/static/js/main.395b0f40.chunk.js.map",
+    "runtime-main.js": "/react-leaning-start/static/js/runtime-main.6b737b52.js",
+    "runtime-main.js.map": "/react-leaning-start/static/js/runtime-main.6b737b52.js.map",
+    "static/css/2.de424728.chunk.css": "/react-leaning-start/static/css/2.de424728.chunk.css",
+    "static/js/2.28a7f3c8.chunk.js": "/react-leaning-start/static/js/2.28a7f3c8.chunk.js",
+    "static/js/2.28a7f3c8.chunk.js.map": "/react-leaning-start/static/js/2.28a7f3c8.chunk.js.map",
+    "index.html": "/react-leaning-start/index.html",
+    "precache-manifest.6b1003f4fc711dc3fd2c67471d3356aa.js": "/react-leaning-start/precache-manifest.6b1003f4fc711dc3fd2c67471d3356aa.js",
+    "service-worker.js": "/react-leaning-start/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/react-leaning-start/static/css/2.de424728.chunk.css.map",
+    "static/css/main.5d937b94.chunk.css.map": "/react-leaning-start/static/css/main.5d937b94.chunk.css.map",
+    "static/js/2.28a7f3c8.chunk.js.LICENSE.txt": "/react-leaning-start/static/js/2.28a7f3c8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b737b52.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.28a7f3c8.chunk.js",
+    "static/css/main.5d937b94.chunk.css",
+    "static/js/main.395b0f40.chunk.js"
+  ]
+}
