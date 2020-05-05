@@ -48,12 +48,12 @@ export default class MovieList extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log("prevProps", prevProps);
+    // console.log("prevProps", prevProps);
   }
 
   render() {
     // console.log("MovieList state", this.state);
-    console.log("render props", this.props);
+    // console.log("render props", this.props);
     return (
       <div className="row">
         {this.state.isFetched ? (

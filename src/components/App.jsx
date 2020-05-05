@@ -41,7 +41,7 @@ class App extends React.Component {
       prevState.sort_by !== this.state.sort_by ||
       prevState.currentPage !== this.state.currentPage
     ) {
-      console.log("App call api");
+      // console.log("App call api");
       this.getMovies();
     }
   }
