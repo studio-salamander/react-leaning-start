@@ -72,9 +72,9 @@ class MoviePaginator extends React.Component {
             className={getActiveClassName(i)}
             onClick={handlePagerClick("number", i)}
           >
-            <a className="page-link" href="#">
+            <button className="page-link">
               {i}
-            </a>
+            </button>
           </li>
         );
       }
@@ -91,34 +91,34 @@ class MoviePaginator extends React.Component {
             className={getDIsabledClassName(pagerLeftBtnsDisabled)}
             onClick={handlePagerClick("first")}
           >
-            <a className="page-link" href="#" aria-label="First">
+            <button className="page-link" aria-label="First">
               First
-            </a>
+            </button>
           </li>
           <li
             className={getDIsabledClassName(pagerLeftBtnsDisabled)}
             onClick={handlePagerClick("prev")}
           >
-            <a className="page-link" href="#" aria-label="Previous">
+            <button className="page-link" aria-label="Previous">
               Previous
-            </a>
+            </button>
           </li>
           {generatePageNumsLi()}
           <li
             className={getDIsabledClassName(pagerRightBtnsDisabled)}
             onClick={handlePagerClick("next")}
           >
-            <a className="page-link" href="#" aria-label="Next">
+            <button className="page-link" aria-label="Next">
               Next
-            </a>
+            </button>
           </li>
           <li
             className={getDIsabledClassName(pagerRightBtnsDisabled)}
             onClick={handlePagerClick("last")}
           >
-            <a className="page-link" href="#" aria-label="Next">
+            <button className="page-link" aria-label="Last">
               Last
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
