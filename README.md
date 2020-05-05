@@ -1,5 +1,3 @@
-<img src="public/logo.jpg" width="200" />
-
 ## Movies API
 
 ```
