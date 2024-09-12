@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://studio-salamander.github.io/react-leaning-start",
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^5.0.0",
     "classnames": "^2.2.6",
     "core-js": "^3.6.5",
     "node-sass": "^9.0.0",
